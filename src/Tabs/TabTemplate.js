@@ -16,6 +16,9 @@ class TabTemplate extends Component {
     if (!this.props.selected) {
       styles.height = 0;
       styles.overflow = 'hidden';
+    } else {
+      styles.height = '100%';
+      styles.overflow = 'scroll';
     }
 
     return (
